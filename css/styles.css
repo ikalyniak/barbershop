@@ -16,3 +16,361 @@ body {
   font-size: 18px;
   color: var(--color-desc);
 }
+
+/* ========== COMPONENTS ========== */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  border: 1px solid var(--color-accent);
+  box-sizing: border-box;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn-light {
+  color: var(--color-main);
+}
+
+.btn-dark {
+  color: var(--color-header);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--color-main);
+  background-color: var(--color-accent);
+}
+/* ========== END OMPONENTS ========== */
+
+/* ========== HEADER ========== */
+.header {
+  background-color: #111319;
+}
+.nav-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  color: var(--color-main);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-accent);
+}
+
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-main);
+}
+
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--color-accent);
+}
+/* ========== END HEADER ========== */
+
+/* ========== HERO ========== */
+.hero {
+  background-color: #111319;
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+  color: var(--color-header);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--color-accent);
+}
+
+.hero-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-light);
+}
+
+.hero-title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.181;
+  letter-spacing: 0.05em;
+  color: var(--color-main);
+}
+
+.hero-desc {
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: var(--color-middle);
+}
+/* ========== END HERO ========== */
+
+/* ========== ABOUT ========== */
+.about-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-header);
+}
+
+.about-title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  color: var(--color-header);
+}
+
+.about-desc {
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: var(--color-desc);
+}
+
+.about-subdesc {
+  font-size: 14px;
+  line-height: 1.857;
+  letter-spacing: 0.02em;
+  color: var(--color-desc);
+}
+/* ========== END ABOUT ========== */
+
+/* ========== SERVICES ========== */
+.services {
+  background: #111319;
+}
+
+.services-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-light);
+}
+
+.services-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  color: var(--color-main);
+}
+
+.serv-item {
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: var(--color-middle);
+}
+
+/* ========== END SERVICES ========== */
+
+/* ========== ADVANTAGES ========== */
+.adv-number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.357;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--color-header);
+}
+
+.adv-number-desc {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  text-align: center;
+  color: var(--color-header);
+}
+
+.adv-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-header);
+}
+
+.adv-title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  color: var(--color-header);
+}
+
+.adv-desc {
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: var(--color-desc);
+}
+/* ========== END ADVANTAGES ========== */
+
+/* ========== MASTERS ========== */
+.masters {
+  background: #f7f7f7;
+}
+
+.masters-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-header);
+}
+
+.masters-title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  color: var(--color-header);
+}
+
+.masters-name {
+  font-weight: inherit;
+  line-height: 1.389;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-header);
+}
+
+.masters-job {
+  font-size: 14px;
+  line-height: 1.357;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-accent);
+}
+/* ========== END MASTERS  ========== */
+
+/* ========== GALLERY  ========== */
+.gallery-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-header);
+}
+/* ========== END GALLERY  ========== */
+
+/* ========== CONTACT FORM  ========== */
+.contact-form {
+  background-color: #191c26;
+}
+
+.form-title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  color: var(--color-main);
+}
+/* ========== END CONTACT FORM  ========== */
+
+/* ========== CONTACT INFORMATION  ========== */
+.contact-info {
+  background-color: #191c26;
+}
+
+.contact-info-title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  color: var(--color-main);
+}
+
+.contact-info-address {
+  font-style: normal;
+}
+
+.contact-address,
+.contact-link {
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: var(--color-middle);
+}
+
+.mail {
+  text-decoration-line: underline;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--color-accent);
+}
+
+.contact-time {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-main);
+}
+
+.time-desc {
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: var(--color-middle);
+}
+/* ========== END CONTACT INFORMATION  ========== */
+
+/* ========== FOOTER  ========== */
+.footer-copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+  color: var(--color-middle);
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+  color: var(--color-header);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--color-accent);
+}
+/* ========== END FOOTER  ========== */
