@@ -1,0 +1,18 @@
+:root {
+  --text-header: "Raleway", sans-serif;
+  --text-desc: "Open Sans", sans-serif;
+  --color-accent: #ff6c00;
+  --color-main: #ffffff;
+  --color-middle: #9da4bd;
+  --color-light: rgba(157, 164, 189, 0.6);
+  --color-header: #303030;
+  --color-desc: #555555;
+  --background-second: #f7f7f7;
+}
+
+body {
+  font-family: var(--text-desc);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-desc);
+}
