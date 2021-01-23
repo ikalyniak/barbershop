@@ -53,7 +53,6 @@ body {
   text-transform: uppercase;
 
   border: 1px solid var(--color-accent);
-  box-sizing: border-box;
   border-radius: 25px;
   cursor: pointer;
   background-color: transparent;
@@ -214,7 +213,31 @@ body {
 /* ========== END HERO ========== */
 
 /* ========== ABOUT ========== */
+.about {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.about .container {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-right {
+  padding-right: 35px;
+  padding-left: 64px;
+}
+
 .about-subtitle {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.364;
@@ -224,6 +247,8 @@ body {
 }
 
 .about-title {
+  margin-bottom: 20px;
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 42px;
@@ -233,12 +258,16 @@ body {
 }
 
 .about-desc {
+  margin-bottom: 20px;
+
   line-height: 1.667;
   letter-spacing: 0.02em;
   color: var(--color-desc);
 }
 
 .about-subdesc {
+  margin-bottom: 40px;
+
   font-size: 14px;
   line-height: 1.857;
   letter-spacing: 0.02em;
