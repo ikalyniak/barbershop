@@ -10,6 +10,20 @@
   --background-second: #f7f7f7;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: var(--text-desc);
   font-weight: 400;
@@ -20,13 +34,18 @@ body {
 /* ========== COMPONENTS ========== */
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
+  display: block;
   text-decoration: none;
 }
 
 .button {
+  padding: 12px 20px;
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.333;
@@ -53,13 +72,48 @@ body {
   color: var(--color-main);
   background-color: var(--color-accent);
 }
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 /* ========== END OMPONENTS ========== */
 
 /* ========== HEADER ========== */
-.header {
-  background-color: #111319;
+
+.header .container {
+  display: flex;
+  align-items: center;
+
+  background-color: #15171ba6;
 }
+
+.nav {
+  display: flex;
+}
+
+.logo {
+  margin-top: 33px;
+  margin-bottom: 33px;
+  margin-right: 71px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .nav-link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.333;
@@ -73,6 +127,11 @@ body {
 }
 
 .header-tel {
+  margin-right: 40px;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.333;
@@ -88,8 +147,26 @@ body {
 /* ========== END HEADER ========== */
 
 /* ========== HERO ========== */
-.hero {
-  background-color: #111319;
+
+.hero .container {
+  display: flex;
+  background-color: #15171ba6;
+}
+
+.hero-left {
+  width: 100px;
+  background-color: var(--background-second);
+}
+
+.hero-right {
+  flex-grow: 1;
+  padding-top: 152px;
+  padding-bottom: 206px;
+  padding-left: 100px;
+}
+
+.hero-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .hero-link {
@@ -106,6 +183,8 @@ body {
 }
 
 .hero-subtitle {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.364;
@@ -115,6 +194,8 @@ body {
 }
 
 .hero-title {
+  margin-bottom: 20px;
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 72px;
@@ -124,6 +205,8 @@ body {
 }
 
 .hero-desc {
+  max-width: 420px;
+
   line-height: 1.667;
   letter-spacing: 0.02em;
   color: var(--color-middle);
