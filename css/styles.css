@@ -360,6 +360,34 @@ body {
 /* ========== END SERVICES ========== */
 
 /* ========== ADVANTAGES ========== */
+.advantages .container {
+  display: flex;
+}
+
+.adv-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 470px;
+  padding-left: 100px;
+}
+
+.adv-item {
+  width: 170px;
+  min-height: 133px;
+  padding: 20px 15px;
+
+  background-color: var(--background-second);
+}
+
+.adv-item:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+
+.adv-item:nth-child(2n) {
+  margin-top: 30px;
+}
+
 .adv-number {
   font-weight: 700;
   font-size: 42px;
@@ -377,28 +405,14 @@ body {
   color: var(--color-header);
 }
 
-.adv-subtitle {
-  /* font-weight: 600;
-  font-size: 11px;
-  line-height: 1.364;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-header); */
+.adv-right {
+  padding-right: 100px;
+  padding-left: 130px;
 }
 
 .adv-title {
-  /* font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.167;
-  letter-spacing: 0.05em;
-  color: var(--color-header); */
-}
-
-.adv-desc {
-  /* line-height: 1.667;
-  letter-spacing: 0.02em;
-  color: var(--color-desc); */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 /* ========== END ADVANTAGES ========== */
 
@@ -407,25 +421,20 @@ body {
   background: #f7f7f7;
 }
 
-.masters-subtitle {
-  /* font-weight: 600;
-  font-size: 11px;
-  line-height: 1.364;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-header); */
+.masters-title {
+  margin-top: 20px;
+  margin-bottom: 44px;
 }
 
-.masters-title {
-  /* font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.167;
-  letter-spacing: 0.05em;
-  color: var(--color-header); */
+.masters-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .masters-name {
+  margin-top: 30px;
+  margin-bottom: 8px;
+
   font-weight: inherit;
   line-height: 1.389;
   text-align: center;
@@ -444,46 +453,62 @@ body {
 
 /* ========== GALLERY  ========== */
 .gallery-subtitle {
-  /* font-weight: 600;
-  font-size: 11px;
-  line-height: 1.364;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-header); */
+  margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  justify-content: space-between;
 }
 /* ========== END GALLERY  ========== */
 
+/* ===== CONTACTS ======*/
+
+.contacts {
+  display: flex;
+}
+
 /* ========== CONTACT FORM  ========== */
 .contact-form {
+  width: 50%;
   background-color: #191c26;
 }
 
+.wrapper {
+  width: 600px;
+  margin-left: auto;
+}
+
 .form-title {
-  /* font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.167;
-  letter-spacing: 0.05em; */
   color: var(--color-main);
 }
 /* ========== END CONTACT FORM  ========== */
 
 /* ========== CONTACT INFORMATION  ========== */
 .contact-info {
+  width: 50%;
+  padding-left: 100px;
+
   background-color: #15171ba6;
 }
 
 .contact-info-title {
-  /* font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.167;
-  letter-spacing: 0.05em; */
+  margin-bottom: 40px;
+
   color: var(--color-main);
 }
 
 .contact-info-address {
+  margin-bottom: 70px;
   font-style: normal;
+}
+
+.contact-info-list {
+  width: 270px;
+}
+
+.contact-info-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .contact-address,
@@ -503,6 +528,8 @@ body {
 }
 
 .contact-time {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.364;
@@ -519,12 +546,28 @@ body {
 /* ========== END CONTACT INFORMATION  ========== */
 
 /* ========== FOOTER  ========== */
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
 .footer-copy {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.2em;
   color: var(--color-middle);
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .footer-link {
