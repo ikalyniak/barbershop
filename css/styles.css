@@ -79,6 +79,34 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.section-title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  color: var(--color-header);
+}
+
+.section-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-header);
+}
+
+.section-desc {
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+}
 /* ========== END OMPONENTS ========== */
 
 /* ========== HEADER ========== */
@@ -121,7 +149,9 @@ body {
 }
 
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.header-tel:hover,
+.header-tel:focus {
   color: var(--color-accent);
 }
 
@@ -137,11 +167,6 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-main);
-}
-
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--color-accent);
 }
 /* ========== END HEADER ========== */
 
@@ -184,11 +209,11 @@ body {
 .hero-subtitle {
   margin-bottom: 20px;
 
-  font-weight: 600;
+  /* font-weight: 600;
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-transform: uppercase; */
   color: var(--color-light);
 }
 
@@ -206,18 +231,13 @@ body {
 .hero-desc {
   max-width: 420px;
 
-  line-height: 1.667;
-  letter-spacing: 0.02em;
+  /* line-height: 1.667;
+  letter-spacing: 0.02em; */
   color: var(--color-middle);
 }
 /* ========== END HERO ========== */
 
 /* ========== ABOUT ========== */
-.about {
-  padding-top: 130px;
-  padding-bottom: 130px;
-}
-
 .about .container {
   display: flex;
 }
@@ -238,31 +258,31 @@ body {
 .about-subtitle {
   margin-bottom: 20px;
 
-  font-weight: 600;
+  /* font-weight: 600;
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-header);
+  color: var(--color-header); */
 }
 
 .about-title {
   margin-bottom: 20px;
 
-  font-family: Raleway;
+  /* font-family: Raleway;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.167;
   letter-spacing: 0.05em;
-  color: var(--color-header);
+  color: var(--color-header); */
 }
 
 .about-desc {
   margin-bottom: 20px;
 
-  line-height: 1.667;
+  /* line-height: 1.667;
   letter-spacing: 0.02em;
-  color: var(--color-desc);
+  color: var(--color-desc); */
 }
 
 .about-subdesc {
@@ -277,32 +297,66 @@ body {
 
 /* ========== SERVICES ========== */
 .services {
-  background: #111319;
+  background: #15171ba6;
 }
 
 .services-subtitle {
-  font-weight: 600;
+  margin-bottom: 20px;
+
+  /* font-weight: 600;
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-transform: uppercase; */
   color: var(--color-light);
 }
 
 .services-title {
-  font-weight: 700;
+  margin-bottom: 44px;
+
+  /* font-weight: 700;
   font-size: 42px;
   line-height: 1.167;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05em; */
   color: var(--color-main);
 }
 
+.serv-list {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.serv-list-left {
+  padding: 30px 40px;
+  width: 50%;
+}
+
+.serv-list-right {
+  padding: 30px 40px;
+  width: 50%;
+}
+
 .serv-item {
+  display: flex;
+
   line-height: 1.667;
   letter-spacing: 0.02em;
   color: var(--color-middle);
 }
 
+.serv-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.serv-name {
+  margin-right: auto;
+}
+
+.services .button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 /* ========== END SERVICES ========== */
 
 /* ========== ADVANTAGES ========== */
@@ -324,27 +378,27 @@ body {
 }
 
 .adv-subtitle {
-  font-weight: 600;
+  /* font-weight: 600;
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-header);
+  color: var(--color-header); */
 }
 
 .adv-title {
-  font-family: Raleway;
+  /* font-family: Raleway;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.167;
   letter-spacing: 0.05em;
-  color: var(--color-header);
+  color: var(--color-header); */
 }
 
 .adv-desc {
-  line-height: 1.667;
+  /* line-height: 1.667;
   letter-spacing: 0.02em;
-  color: var(--color-desc);
+  color: var(--color-desc); */
 }
 /* ========== END ADVANTAGES ========== */
 
@@ -354,21 +408,21 @@ body {
 }
 
 .masters-subtitle {
-  font-weight: 600;
+  /* font-weight: 600;
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-header);
+  color: var(--color-header); */
 }
 
 .masters-title {
-  font-family: Raleway;
+  /* font-family: Raleway;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.167;
   letter-spacing: 0.05em;
-  color: var(--color-header);
+  color: var(--color-header); */
 }
 
 .masters-name {
@@ -390,12 +444,12 @@ body {
 
 /* ========== GALLERY  ========== */
 .gallery-subtitle {
-  font-weight: 600;
+  /* font-weight: 600;
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-header);
+  color: var(--color-header); */
 }
 /* ========== END GALLERY  ========== */
 
@@ -405,26 +459,26 @@ body {
 }
 
 .form-title {
-  font-family: Raleway;
+  /* font-family: Raleway;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.167;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05em; */
   color: var(--color-main);
 }
 /* ========== END CONTACT FORM  ========== */
 
 /* ========== CONTACT INFORMATION  ========== */
 .contact-info {
-  background-color: #191c26;
+  background-color: #15171ba6;
 }
 
 .contact-info-title {
-  font-family: Raleway;
+  /* font-family: Raleway;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.167;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05em; */
   color: var(--color-main);
 }
 
