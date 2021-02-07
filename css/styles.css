@@ -7,7 +7,10 @@
   --color-light: rgba(157, 164, 189, 0.6);
   --color-header: #303030;
   --color-desc: #555555;
+
   --background-second: #f7f7f7;
+
+  --timing-function: linear;
 }
 
 h1,
@@ -127,11 +130,16 @@ body {
 /* ========== END COMPONENTS ========== */
 
 /* ========== HEADER ========== */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
 .header .container {
   display: flex;
   align-items: center;
-  background-color: #15171ba6;
 }
 
 .nav {
@@ -188,22 +196,34 @@ body {
 
 /* ========== HERO ========== */
 
-.hero .container {
+.hero-container {
   display: flex;
+
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-left {
+  display: flex;
+  align-items: flex-end;
+
   width: 100px;
+  padding-left: 27px;
+  padding-bottom: 40px;
 }
 
 .hero-list {
   display: flex;
   align-items: center;
+  transform: rotate(-90deg);
+  transform-origin: left top;
 }
 
 .hero-list::before {
   content: "";
   display: block;
+
   min-width: 60px;
   height: 1px;
   margin-right: 40px;
@@ -213,7 +233,7 @@ body {
 
 .hero-right {
   flex-grow: 1;
-  padding-top: 152px;
+  padding-top: 272px;
   padding-bottom: 206px;
   padding-left: 100px;
 
@@ -222,6 +242,8 @@ body {
       rgba(25, 28, 38, 0.2)
     ),
     url("../images/background/bg-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #15171ba6;
 }
 
