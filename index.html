@@ -39,7 +39,7 @@
       </nav>
       
       <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-      <button class="button btn-light" type="button">онлайн-запись</button>
+      <button class="button btn-light" type="button" data-modal-open>онлайн-запись</button>
     </div>
   </header>
 
@@ -89,7 +89,7 @@
             и жаждет перемен. И когда ты попадешь в руки нашего мастера,
             то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
             готовы усовершенствовать каждого, кто к нам приходит!</p>
-          <button class="button btn-dark" type="button">онлайн-запись</button>
+          <button class="button btn-dark" type="button" data-modal-open>онлайн-запись</button>
         </div>
       </div>
     </section>
@@ -131,7 +131,7 @@
               </li>
             </ul>
           </div>
-          <button class="button btn-light" type="button">онлайн-запись</button>
+          <button class="button btn-light" type="button" data-modal-open>онлайн-запись</button>
         </div>
       </section>
     </div>
@@ -373,5 +373,65 @@
       </ul>
     </div>
   </footer>
+
+  <!--MODAL-->
+  <div class="backdrop  is-hidden" data-modal>
+    <div class="modal">
+      <button class="btn-close" type="button" data-modal-close>
+        <svg class="icon-close">
+          <use href="./images/svg/sprite.svg#close"></use>
+        </svg>
+      </button>
+  
+      <form class="modal-form" autocomplete="on">
+        <b class="modal-form-title">Оставьте свои данные, мы вам перезвоним</b>
+        <label class="label">
+          <input class="modal-input" type="text" name="user-name" placeholder=" " required>
+          <span class="label-name label-name-user">Имя</span>
+          <svg class="modal-icon">
+            <use href="./images/svg/sprite.svg#form-person"></use>
+          </svg>
+        </label>
+  
+        <label class="label">
+          <span class="label-name">Телефон</span>
+          <span class="modal-input-box">
+            <input class="modal-input" type="tel" name="user-phone" required>
+            <svg class="modal-icon">
+              <use href="./images/svg/sprite.svg#form-phone"></use>
+            </svg>
+          </span>
+        </label>
+  
+        <label class="label">
+          <span class="label-name">Почта</span>
+          <span class="modal-input-box">
+            <input class="modal-input" type="email" name="user-mail" required>
+            <svg class="modal-icon">
+              <use href="./images/svg/sprite.svg#form-email"></use>
+            </svg>
+          </span>
+        </label>
+  
+        <label class="label">
+          <span class="label-name">Комментарий</span>
+          <textarea class="modal-comment" name="user-comment" placeholder="Введите текст"></textarea>
+        </label>
+  
+        <input class="modal-check visually-hidden" type="checkbox" name="policy" id="check-policy" required>
+        <label class="label-policy" for="check-policy">
+          <span class="agreement">
+            Соглашаюсь с рассылкой и принимаю
+            <a class="agreement-link" href="">Условия договора</a>
+          </span>
+        </label>
+  
+        <button class="modal-submit" type="submit">Отправить</button>
+  
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
 </body>
 </html>
